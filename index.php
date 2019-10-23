@@ -32,7 +32,7 @@ if (isset($_GET['number'])) {
 
             <?php if (isPrimeNumber($number)): ?>
                 <?php echo '素数である'; ?>
-            <?php elseif (!isPrimeNumber($number)): ?>
+            <?php else: ?>
                 <?php echo '素数でない'; ?>
             <?php endif; ?>
 

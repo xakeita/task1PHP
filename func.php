@@ -1,9 +1,13 @@
 <?php
 
-// 素数判定関数(true:素数,false:素数ではない)
-function isPrimeNumber($num):bool
+/**
+ * 素数判定関数(true:素数,false:素数ではない)
+ *
+ * @param int $num
+ * @return bool
+ */
+function isPrimeNumber(int $num): bool
 {
-
     if ($num <= 1) {
         //1以下は素数ではない
         return false;
@@ -21,8 +25,6 @@ function isPrimeNumber($num):bool
             }
 
         }
-
     }
     return true;
-
 }
