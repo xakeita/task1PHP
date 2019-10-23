@@ -12,10 +12,10 @@ function isPrimeNumber(int $num): bool
         //1は素数ではない
         return false;
     } else {
-        for ($i = 2; $i <= (int)sqrt($num); ++$i) {
+        $root = (int)sqrt($num);
+        for ($i = 2; $i <= $root; ++$i) {
             if ($num % $i === 0) {
                 return false;
-                break; //falseを返したらループを抜ける
             }
         }
     }
