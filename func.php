@@ -15,6 +15,7 @@ function isPrimeNumber(int $num): bool
         for ($i = 2; $i <= (int)sqrt($num); ++$i) {
             if ($num % $i === 0) {
                 return false;
+                break; //falseを返したらループを抜ける
             }
         }
     }
